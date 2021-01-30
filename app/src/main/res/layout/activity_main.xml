@@ -47,7 +47,7 @@
         android:id="@+id/optOperacionesBasicas"
         android:layout_width="wrap_content"
         android:layout_below="@id/txtnum2"
-        android:layout_margin="20dp"
+        android:layout_margin="5dp"
         android:layout_height="wrap_content">
     <RadioButton
         android:id="@+id/optSuma"
@@ -78,7 +78,38 @@
             android:id="@+id/optfactorial"
             android:text="!"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/optPorcentaje"
+            android:Text= "%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/optexponenciacion"
+            android:text="^"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            <RadioButton
+                android:id="@+id/optRaiz"
+                android:text="raiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/optModulo"
+            android:text="modulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/optMayorde2numeros"
+            android:text="Mayor de 2 numeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
 
 
@@ -88,17 +119,17 @@
         android:id="@+id/lblRespuesta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtnum2"
-        android:layout_marginTop="38dp"
+        android:layout_below="@id/optOperacionesBasicas"
+        android:layout_marginTop="5dp"
         android:text="Respuesta ?"
-        android:textAlignment="center" />
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblRespuesta"
-        android:layout_marginTop="229dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
         android:onClick="calcular"
         android:text="Calcular" />
